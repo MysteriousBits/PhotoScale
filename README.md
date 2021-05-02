@@ -49,7 +49,7 @@ unless you need a specific format too much. Default format for saving is Jpg or 
 #### Entry:
 >> You will see the entry input boxes in the right side.
 
-	***** Always hit enter after typing the value. Otherwise, the the value may not change.
+	 **** Always hit enter after typing the value. Otherwise, the the value may not change.
 
 ##### Resolution:
 Resoultion or size of the image is important fact to image file size and quality. Higher the resoulution better the quality
@@ -64,10 +64,11 @@ but larger the file size. And lower the res, smaller the file size but quality d
 But it will generate poor quality image, if the value is too small. Default value is 85. You can play around with this and see which one is 
 better for you. Range is 0-100.
    	[Note that png like RGBA output formats doesnt support these. Which may increase output size a lot as described in the jpg checkbox section.]
-### Jpg checkbox: The best image format for compression is JPEG(.jpg etc) and mode is 'RGB'. On the otherhand .png, .tif, .bmp and etc are loseless 
-image format. *** They can keep transparency as the mode may be "RGBA". But this is not ideal for image compression. So if you want to compress that kind of
-images with PhotoScale, it will convert the image to "RGB" and .jpg when this checkbox is checked(checked by default). But you will lose the transparent 
-area of your image if available. Here you need another checkbox **"White Background"**. Basically it fills the transparent area with complete white.
+#### Jpg checkbox: The best image format for compression is JPEG(.jpg etc) and mode is 'RGB'.
+On the otherhand .png, .tif, .bmp and etc are loseless image format. *** They can keep transparency as the mode may be "RGBA".
+But this is not ideal for image compression. So if you want to compress that kind ofimages with PhotoScale, it will convert the image to "RGB" and .
+jpg when this checkbox is checked(checked by default). But you will lose the transparent area of your image if available.
+Here you need another checkbox **"White Background"**. Basically it fills the transparent area with complete white.
 And if it is unchecked (checked by default) transparent areas will be filled with complete black. So use it as your need.
 		[*If you enter any extension in save dialog, image compression may not work even though it is checked*]
 #### Crop:
