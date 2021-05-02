@@ -1,10 +1,13 @@
-#PhotoScale
+
+# PhotoScale
 ### A simple Image cropping, resizing and mainly an image compression tool
 
 ### Intro:
-	PhotoScale is a very simple gui based application built with python. It can help you to quickly crop your image,
+
+PhotoScale is a very simple gui based application built with python. It can help you to quickly crop your image,
 change resolution of your image and compress your image. It can reduce file size remarkably keeping image quality.
-It uses Python Imaging Library(PIL) to do that. It also has a simple graphical user interface built with python tkinter.
+Moreover it can convert one image to another image format.It uses Python Imaging Library(PIL) to do that. 
+It also has a simple graphical user interface built with python tkinter.
 
 [Actually tried to have some fun with pillow and so tried to mix it with a gui using my noob coding:)]
 
@@ -72,6 +75,7 @@ Here is the simple cropping properties. You can see some entry for value inputs 
 cropped image by looking at the red rectangle in your image preview. 
 	** The cropping values are actually executed on the original(or processed) size of the image. So while doing both resizing and cropping,
 	   the resolution value will automatically change according to the cropping values keeping the ratio correct. Default crop values are 0.
+
 Left: Number of pixels to crop from the left side.
 Right: Number of pixels to crop from the right.
 Top: Number of pixels to crop from the top.
@@ -83,6 +87,17 @@ is not applicable for the preview). Remember to save the new image after you are
 
 Preview: When you open a new image, you will see a preview(max 800x600, else keep ratio) in the wide blank space.
 Every time you process the image, the condition will be updated. Besides you will see a red rectangle around your image which refers to the crop area.
+
+**Convertion:**
+As it uses the powerful pillow library, it can also convert image formats. (checck supported formats in 'pillow' page)
+What you have to do is just give the image format extension at the end of name when you save the image. But as mentioned earlier, compression may not all the time.
+
+*About image compression: 
+https://en.wikipedia.org/wiki/Image_compression
+
+*About pillow:
+https://pillow.readthedocs.io/en/stable/
+
 
 #### Examples:
 Here is an image compressed with PhotoScale.
