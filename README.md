@@ -15,11 +15,13 @@ It also has a simple graphical user interface built with python tkinter.
 
 
 ### Basic Information:
-Program window: 1000x650 (non-resizable)
-File Size:- comressed - 13/14 mb, installed - 30-35 mb ( python and other packages combined)
-[You can grab the .py script from github and install 'pillow' module if you already have python]
-Supported Platforms: Windows (python script will work in linux and mac)
-Performance:- RAM usage:20-30 mb ( CPU usage should be nothing at maximum time. But may use some while processing)
+Program window: 1000x650 (non-resizable).
+File Size:- comressed - 13/14 mb, installed - 30-35 mb ( python and other packages combined).
+[You can grab the .py script from github and install 'pillow' module if you already have python].
+Supported Platforms: Windows (python script will work in linux and mac).
+Performance:- RAM usage:20-30 mb ( CPU usage should be nothing at maximum time. But may use some while processing).But it all depends on your image.
+If you use a high res texture like 4k/8k then ram uasge should be more then the image size. Besides while saving your image it will use a good amount of resources
+as well as take some time. Note that this programme doesnt allow multi threading as it is not going to do heavy tasks. So it cant use more than a single core of your cpu.
 
 #### How to get:
 	You can find all of my file above
@@ -41,7 +43,8 @@ Open the PhotoScale.exe file. You can see some buttons and options there.
 
 1. Open: Simply ask you to choose an image file from your storage drive. Just select any image file here.
 2. Save: After adjusting the settings and processing use this to save your new image to a seperate directory. It will open then image after you save.
-	But go to file directory for more details.
+	But go to file directory for more details. 
+	**The actual compression is done in this step**
 	*** Giving file name with extension may result in increased file size without compression. So better to give the name only,
 unless you need a specific format too much. Default format for saving is Jpg or the original one. (see the usage of jpg checkbox for more)
 3. Documentation/Publishing page: This button just take you to the github publishing page. You can find all details of it there.
@@ -71,6 +74,10 @@ jpg when this checkbox is checked(checked by default). But you will lose the tra
 Here you need another checkbox **"White Background"**. Basically it fills the transparent area with complete white.
 And if it is unchecked (checked by default) transparent areas will be filled with complete black. So use it as your need.
 		[*If you enter any extension in save dialog, image compression may not work even though it is checked*]
+{**But you should still use it for .png or that kind of loseless quality image. Because still you can get a well enough result as it always try to find the best optimization.
+You may see good amount change if use a very high quality image.** (For example, A 45 mb 4k Png texture was tested. 
+And it came down to 7 mb keeping the same res. and 100% quality!}
+
 #### Crop:
 Here is the simple cropping properties. You can see some entry for value inputs as well as some sliders for easy adjustment. You can guess the 
 cropped image by looking at the red rectangle in your image preview. 
